@@ -13,10 +13,10 @@ controllers:
           startup: {enabled: false}
         securityContext:
           allowPrivilegeEscalation: false
-          capabilities: {drop: [ALL], add: [NET_BIND_SERVICE]}
+          capabilities: {drop: [ALL]}
 service:
   main:
     controller: main
     ports:
       http:
-        port: 80
+        port: 8080
