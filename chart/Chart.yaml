@@ -1,0 +1,5 @@
+apiVersion: v2
+name: cfgsrc-local
+description: Self-contained chart used to prove the control-plane helm render.
+type: application
+version: 0.1.0

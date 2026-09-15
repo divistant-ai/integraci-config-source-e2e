@@ -1,0 +1,1 @@
+{"$schema": "http://json-schema.org/draft-07/schema#", "properties": {"image": {"$ref": "http://127.0.0.1:1/never-fetched.json"}}}

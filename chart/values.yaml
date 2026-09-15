@@ -1,0 +1,4 @@
+image:
+  repository: placeholder.invalid/app
+  tag: placeholder
+replicas: 1
