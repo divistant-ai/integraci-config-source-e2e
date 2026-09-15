@@ -1,0 +1,7 @@
+controllers:
+  main:
+    replicas: 2
+    containers:
+      main:
+        env:
+          APP_STAGE: "prod"

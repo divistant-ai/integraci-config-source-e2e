@@ -1,0 +1,22 @@
+controllers:
+  main:
+    containers:
+      main:
+        image:
+          repository: placeholder.invalid/set-by-promotion
+          tag: set-by-promotion
+        env:
+          APP_GREETING: "hello from an external git repository"
+        probes:
+          readiness: {enabled: true, type: TCP}
+          liveness: {enabled: false}
+          startup: {enabled: false}
+        securityContext:
+          allowPrivilegeEscalation: false
+          capabilities: {drop: [ALL], add: [NET_BIND_SERVICE]}
+service:
+  main:
+    controller: main
+    ports:
+      http:
+        port: 80
